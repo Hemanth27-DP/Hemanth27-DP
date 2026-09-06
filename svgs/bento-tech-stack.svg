@@ -1,0 +1,457 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 440" width="860" height="440">
+  <defs>
+    <!-- Card Gradients -->
+    <linearGradient id="cloudGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1c1917"/>
+      <stop offset="60%" stop-color="#12161f"/>
+      <stop offset="100%" stop-color="#0d1117"/>
+    </linearGradient>
+
+    <linearGradient id="cardBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#161b22"/>
+      <stop offset="100%" stop-color="#0d1117"/>
+    </linearGradient>
+
+    <linearGradient id="awsOrangeGlow" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FF9900"/>
+      <stop offset="100%" stop-color="#FFAE33"/>
+    </linearGradient>
+
+    <linearGradient id="pillGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#21262d"/>
+      <stop offset="100%" stop-color="#161b22"/>
+    </linearGradient>
+
+    <linearGradient id="pythonGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#387eb8"/>
+      <stop offset="100%" stop-color="#ffe873"/>
+    </linearGradient>
+
+    <!-- Subtle Filters -->
+    <filter id="awsDrop" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="2" stdDeviation="4" flood-color="#FF9900" flood-opacity="0.35"/>
+    </filter>
+    <filter id="cardGlow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="1" stdDeviation="3" flood-color="#30363d" flood-opacity="0.5"/>
+    </filter>
+  </defs>
+
+  <style>
+    .card-title {
+      font-family: "JetBrains Mono", Consolas, monospace;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 2px;
+      fill: #8b949e;
+      text-transform: uppercase;
+    }
+    .card-title-hl {
+      fill: #FF9900;
+    }
+    .tech-pill-text {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      font-size: 11.5px;
+      font-weight: 600;
+      fill: #c9d1d9;
+    }
+    .tech-pill-sub {
+      font-family: "JetBrains Mono", Consolas, monospace;
+      font-size: 9.5px;
+      fill: #8b949e;
+    }
+    .badge-aws {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      font-size: 13px;
+      font-weight: 800;
+      fill: #ffffff;
+      letter-spacing: 0.5px;
+    }
+    .learning-tag {
+      font-family: "JetBrains Mono", Consolas, monospace;
+      font-size: 8.5px;
+      font-weight: 700;
+      fill: #e3b341;
+      letter-spacing: 1px;
+    }
+
+    /* Subtle Micro Animation on Hover */
+    .bento-card {
+      transition: all 0.3s ease;
+    }
+    .bento-card:hover {
+      filter: brightness(1.08);
+    }
+  </style>
+
+  <!-- ===================================================================================
+       ROW 1: CLOUD & SECURITY (CENTERPIECE, 500w) + LANGUAGES (325w)
+       =================================================================================== -->
+
+  <!-- CARD 1: CLOUD & SECURITY (Dominant Centerpiece) -->
+  <g transform="translate(10, 10)" class="bento-card">
+    <rect width="500" height="210" rx="14" fill="url(#cloudGrad)" stroke="#FF9900" stroke-width="1.6" stroke-opacity="0.75" filter="url(#awsDrop)"/>
+    
+    <!-- Header -->
+    <g transform="translate(20, 26)">
+      <!-- Cloud Shield Icon -->
+      <path d="M 0 4 L 7 1 L 14 4 C 14 9 7 13 7 13 C 7 13 0 9 0 4 Z" fill="none" stroke="#FF9900" stroke-width="1.6"/>
+      <text x="22" y="10" class="card-title card-title-hl">CLOUD &amp; SECURITY // AWS FOCAL POINT</text>
+      
+      <!-- Live Security Indicator Dot -->
+      <circle cx="456" cy="6" r="3" fill="#3fb950"/>
+      <circle cx="456" cy="6" r="6" fill="none" stroke="#3fb950" stroke-width="0.8" opacity="0.5"/>
+    </g>
+
+    <line x1="20" y1="42" x2="480" y2="42" stroke="#30363d" stroke-width="0.8" stroke-dasharray="3 3"/>
+
+    <!-- AWS Centerpiece Highlight Banner -->
+    <g transform="translate(20, 52)">
+      <rect width="460" height="42" rx="8" fill="#161b22" stroke="#FF9900" stroke-width="1.2" stroke-opacity="0.8"/>
+      
+      <!-- AWS Logo Icon -->
+      <g transform="translate(16, 9)">
+        <path d="M 4 14 L 9 2 L 13 2 L 17 14 L 14 14 L 13 11 L 8 11 L 7 14 Z M 9 8 L 12 8 L 10.5 4 Z" fill="#ffffff"/>
+        <path d="M 18 14 L 21 4 L 24 4 L 26 10 L 28 4 L 31 4 L 34 14 L 31 14 L 29.5 8 L 27.5 14 L 24.5 14 L 22.5 8 L 21 14 Z" fill="#ffffff"/>
+        <path d="M 36 12 C 37 13.5 39 14 41 14 C 43.5 14 44.5 13 44.5 11.5 C 44.5 9 40 9.5 40 6.5 C 40 5 41.5 4 43.5 4 C 45 4 46.5 4.5 47 5.5 L 45 7 C 44.5 6.2 43.8 5.8 43 5.8 C 42 5.8 41.5 6.2 41.5 7 C 41.5 9 46 8.5 46 11.5 C 46 13.5 44 15 41 15 C 38.5 15 36.5 13.5 36 12 Z" fill="#ffffff"/>
+        <!-- AWS Orange Smile -->
+        <path d="M 5 21 C 20 27 34 26 46 18" fill="none" stroke="#FF9900" stroke-width="2.2" stroke-linecap="round"/>
+        <path d="M 43 18 L 47 18 L 46 22 Z" fill="#FF9900"/>
+      </g>
+
+      <!-- Centerpiece Labels -->
+      <text x="75" y="22" class="badge-aws">Amazon Web Services</text>
+      <text x="75" y="34" class="tech-pill-sub" fill="#FF9900">CORE INFRASTRUCTURE &amp; SECURITY DOMAIN</text>
+      
+      <!-- Target Tag -->
+      <rect x="345" y="11" width="102" height="20" rx="4" fill="#21262d" stroke="#30363d" stroke-width="0.8"/>
+      <text x="396" y="24" font-family="'JetBrains Mono', monospace" font-size="9px" fill="#c9d1d9" text-anchor="middle">PRIMARY STACK</text>
+    </g>
+
+    <!-- Services Grid (3 Columns) -->
+    <!-- Col 1: Identity & Access -->
+    <g transform="translate(20, 106)">
+      <!-- IAM Pill -->
+      <g transform="translate(0, 0)">
+        <rect width="145" height="30" rx="6" fill="url(#pillGrad)" stroke="#30363d" stroke-width="0.8"/>
+        <!-- Key Icon -->
+        <path d="M 12 15 A 3 3 0 1 1 18 15 A 3 3 0 0 1 12 15 M 18 15 L 24 15 M 21 15 L 21 18" fill="none" stroke="#FF9900" stroke-width="1.2"/>
+        <text x="32" y="19" class="tech-pill-text">AWS IAM</text>
+      </g>
+
+      <!-- EC2 Pill -->
+      <g transform="translate(0, 36)">
+        <rect width="145" height="30" rx="6" fill="url(#pillGrad)" stroke="#30363d" stroke-width="0.8"/>
+        <!-- Compute Icon -->
+        <rect x="12" y="8" width="12" height="12" rx="2" fill="none" stroke="#FF9900" stroke-width="1.2"/>
+        <line x1="8" y1="12" x2="12" y2="12" stroke="#FF9900" stroke-width="1"/>
+        <line x1="8" y1="16" x2="12" y2="16" stroke="#FF9900" stroke-width="1"/>
+        <line x1="24" y1="12" x2="28" y2="12" stroke="#FF9900" stroke-width="1"/>
+        <line x1="24" y1="16" x2="28" y2="16" stroke="#FF9900" stroke-width="1"/>
+        <text x="32" y="19" class="tech-pill-text">Amazon EC2</text>
+      </g>
+
+      <!-- S3 Pill -->
+      <g transform="translate(0, 72)">
+        <rect width="145" height="30" rx="6" fill="url(#pillGrad)" stroke="#30363d" stroke-width="0.8"/>
+        <!-- Bucket Icon -->
+        <path d="M 11 9 L 23 9 L 21 21 L 13 21 Z" fill="none" stroke="#FF9900" stroke-width="1.2"/>
+        <line x1="10" y1="12" x2="24" y2="12" stroke="#FF9900" stroke-width="0.8"/>
+        <text x="32" y="19" class="tech-pill-text">Amazon S3</text>
+      </g>
+    </g>
+
+    <!-- Col 2: Network & Monitoring -->
+    <g transform="translate(178, 106)">
+      <!-- VPC Pill -->
+      <g transform="translate(0, 0)">
+        <rect width="145" height="30" rx="6" fill="url(#pillGrad)" stroke="#30363d" stroke-width="0.8"/>
+        <!-- Network Cloud Icon -->
+        <path d="M 12 16 A 3 3 0 0 1 15 11 A 4 4 0 0 1 22 13 A 3 3 0 0 1 21 18 L 12 18 Z" fill="none" stroke="#58a6ff" stroke-width="1.2"/>
+        <text x="32" y="19" class="tech-pill-text">Amazon VPC</text>
+      </g>
+
+      <!-- CloudTrail Pill -->
+      <g transform="translate(0, 36)">
+        <rect width="145" height="30" rx="6" fill="url(#pillGrad)" stroke="#30363d" stroke-width="0.8"/>
+        <!-- Audit Trail Icon -->
+        <circle cx="15" cy="14" r="4" fill="none" stroke="#58a6ff" stroke-width="1.2"/>
+        <path d="M 18 17 L 22 21" stroke="#58a6ff" stroke-width="1.4"/>
+        <text x="32" y="19" class="tech-pill-text">CloudTrail</text>
+      </g>
+
+      <!-- CloudWatch Pill -->
+      <g transform="translate(0, 72)">
+        <rect width="145" height="30" rx="6" fill="url(#pillGrad)" stroke="#30363d" stroke-width="0.8"/>
+        <!-- Gauge/Metric Icon -->
+        <path d="M 11 18 A 6 6 0 1 1 23 18 Z" fill="none" stroke="#58a6ff" stroke-width="1.2"/>
+        <line x1="17" y1="18" x2="20" y2="13" stroke="#FF9900" stroke-width="1.2"/>
+        <text x="32" y="19" class="tech-pill-text">CloudWatch</text>
+      </g>
+    </g>
+
+    <!-- Col 3: Systems & Defense -->
+    <g transform="translate(335, 106)">
+      <!-- Linux / Ubuntu Pill -->
+      <g transform="translate(0, 0)">
+        <rect width="145" height="30" rx="6" fill="url(#pillGrad)" stroke="#30363d" stroke-width="0.8"/>
+        <!-- Linux Tux / Terminal Icon -->
+        <circle cx="17" cy="14" r="5" fill="none" stroke="#e3b341" stroke-width="1.2"/>
+        <text x="30" y="19" class="tech-pill-text">Linux / Ubuntu</text>
+      </g>
+
+      <!-- Blue Team / SOC Pill -->
+      <g transform="translate(0, 36)">
+        <rect width="145" height="66" rx="6" fill="#161b22" stroke="#388bfd" stroke-width="1"/>
+        <!-- Radar / Shield -->
+        <circle cx="20" cy="24" r="8" fill="none" stroke="#388bfd" stroke-width="1.2"/>
+        <line x1="20" y1="24" x2="26" y2="18" stroke="#39d353" stroke-width="1.4"/>
+        <circle cx="20" cy="24" r="2" fill="#39d353"/>
+        <text x="36" y="24" class="tech-pill-text" fill="#58a6ff">Blue Team</text>
+        <text x="36" y="42" class="tech-pill-text" fill="#58a6ff">SOC Workflows</text>
+        <text x="36" y="56" class="tech-pill-sub" fill="#8b949e">Analysis &amp; Defense</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- CARD 2: LANGUAGES (325w) -->
+  <g transform="translate(525, 10)" class="bento-card">
+    <rect width="325" height="210" rx="14" fill="url(#cardBg)" stroke="#30363d" stroke-width="1.2" filter="url(#cardGlow)"/>
+    
+    <g transform="translate(20, 26)">
+      <!-- Code brackets icon -->
+      <path d="M 4 2 L 0 6 L 4 10 M 10 2 L 14 6 L 10 10" fill="none" stroke="#79c0ff" stroke-width="1.4"/>
+      <text x="22" y="9" class="card-title">LANGUAGES</text>
+    </g>
+
+    <line x1="20" y1="42" x2="305" y2="42" stroke="#30363d" stroke-width="0.8" stroke-dasharray="3 3"/>
+
+    <!-- Priority 1: Python (Large Showcase Pill) -->
+    <g transform="translate(20, 52)">
+      <rect width="285" height="46" rx="8" fill="#161b22" stroke="#387eb8" stroke-width="1.2"/>
+      
+      <!-- Python Official Vector Mark -->
+      <g transform="translate(14, 9)">
+        <path d="M 14 0 C 6.5 0 7 3.5 7 3.5 L 7 6.5 L 14 6.5 L 14 8 L 3.5 8 C 3.5 8 0 7.5 0 15 C 0 22 3 21.5 3 21.5 L 5 21.5 L 5 18 C 5 14.5 8.5 14.5 8.5 14.5 L 15.5 14.5 C 15.5 14.5 19 14.5 19 11 L 19 3.5 C 19 3.5 19.5 0 14 0 Z M 10.5 2 C 11.3 2 12 2.7 12 3.5 C 12 4.3 11.3 5 10.5 5 C 9.7 5 9 4.3 9 3.5 C 9 2.7 9.7 2 10.5 2 Z" fill="#387eb8"/>
+        <path d="M 14 28 C 21.5 28 21 24.5 21 24.5 L 21 21.5 L 14 21.5 L 14 20 L 24.5 20 C 24.5 20 28 20.5 28 13 C 28 6 25 6.5 25 6.5 L 23 6.5 L 23 10 C 23 13.5 19.5 13.5 19.5 13.5 L 12.5 13.5 C 12.5 13.5 9 13.5 9 17 L 9 24.5 C 9 24.5 8.5 28 14 28 Z M 17.5 26 C 16.7 26 16 25.3 16 24.5 C 16 23.7 16.7 23 17.5 23 C 18.3 23 19 23.7 19 24.5 C 19 25.3 18.3 26 17.5 26 Z" fill="#ffe873"/>
+      </g>
+
+      <text x="56" y="22" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="14.5px" font-weight="700" fill="#ffffff">Python</text>
+      <text x="56" y="37" class="tech-pill-sub" fill="#79c0ff">PRIMARY ENGINEERING &amp; SECURITY LANGUAGE</text>
+    </g>
+
+    <!-- Priority 2 & 3: JavaScript & SQL -->
+    <g transform="translate(20, 108)">
+      <!-- JavaScript -->
+      <g transform="translate(0, 0)">
+        <rect width="138" height="42" rx="6" fill="url(#pillGrad)" stroke="#30363d" stroke-width="0.8"/>
+        <rect x="10" y="9" width="24" height="24" rx="3" fill="#f7df1e"/>
+        <text x="14" y="27" font-family="sans-serif" font-weight="900" font-size="13px" fill="#000000">JS</text>
+        <text x="42" y="26" class="tech-pill-text">JavaScript</text>
+      </g>
+
+      <!-- SQL -->
+      <g transform="translate(148, 0)">
+        <rect width="137" height="42" rx="6" fill="url(#pillGrad)" stroke="#30363d" stroke-width="0.8"/>
+        <!-- Database cylinder -->
+        <g transform="translate(10, 11)">
+          <ellipse cx="10" cy="4" rx="8" ry="3" fill="none" stroke="#58a6ff" stroke-width="1.2"/>
+          <path d="M 2 4 L 2 15 C 2 18 18 18 18 15 L 18 4" fill="none" stroke="#58a6ff" stroke-width="1.2"/>
+          <path d="M 2 9.5 C 2 12.5 18 12.5 18 9.5" fill="none" stroke="#58a6ff" stroke-width="1.2"/>
+        </g>
+        <text x="40" y="26" class="tech-pill-text">SQL</text>
+      </g>
+    </g>
+
+    <!-- Supporting: HTML5 & CSS3 -->
+    <g transform="translate(20, 160)">
+      <rect width="138" height="34" rx="6" fill="url(#pillGrad)" stroke="#30363d" stroke-width="0.8"/>
+      <path d="M 12 7 L 14 25 L 21 27 L 28 25 L 30 7 Z" fill="#e34f26" opacity="0.8"/>
+      <text x="38" y="22" class="tech-pill-text">HTML5</text>
+
+      <g transform="translate(148, 0)">
+        <rect width="137" height="34" rx="6" fill="url(#pillGrad)" stroke="#30363d" stroke-width="0.8"/>
+        <path d="M 12 7 L 14 25 L 21 27 L 28 25 L 30 7 Z" fill="#1572b6" opacity="0.8"/>
+        <text x="38" y="22" class="tech-pill-text">CSS3</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- ===================================================================================
+       ROW 2: FRAMEWORKS & RUNTIMES (270w) + DATABASES & LEARNING (270w) + TOOLS (270w)
+       =================================================================================== -->
+
+  <!-- CARD 3: FRAMEWORKS & RUNTIMES (270w) -->
+  <g transform="translate(10, 230)" class="bento-card">
+    <rect width="270" height="200" rx="14" fill="url(#cardBg)" stroke="#30363d" stroke-width="1.2" filter="url(#cardGlow)"/>
+    
+    <g transform="translate(18, 24)">
+      <path d="M 0 6 L 6 0 L 12 6 L 6 12 Z" fill="none" stroke="#61dafb" stroke-width="1.2"/>
+      <text x="20" y="9" class="card-title">FRAMEWORKS &amp; DEV</text>
+    </g>
+    <line x1="18" y1="38" x2="252" y2="38" stroke="#30363d" stroke-width="0.8" stroke-dasharray="3 3"/>
+
+    <g transform="translate(18, 48)">
+      <!-- React -->
+      <g transform="translate(0, 0)">
+        <rect width="112" height="34" rx="6" fill="url(#pillGrad)" stroke="#30363d" stroke-width="0.8"/>
+        <!-- React atom -->
+        <ellipse cx="16" cy="17" rx="8" ry="3" fill="none" stroke="#61dafb" stroke-width="1"/>
+        <ellipse cx="16" cy="17" rx="8" ry="3" fill="none" stroke="#61dafb" stroke-width="1" transform="rotate(60 16 17)"/>
+        <ellipse cx="16" cy="17" rx="8" ry="3" fill="none" stroke="#61dafb" stroke-width="1" transform="rotate(120 16 17)"/>
+        <circle cx="16" cy="17" r="1.5" fill="#61dafb"/>
+        <text x="32" y="21" class="tech-pill-text">React</text>
+      </g>
+
+      <!-- Node.js -->
+      <g transform="translate(122, 0)">
+        <rect width="112" height="34" rx="6" fill="url(#pillGrad)" stroke="#30363d" stroke-width="0.8"/>
+        <!-- Hexagon -->
+        <path d="M 16 9 L 23 13 L 23 21 L 16 25 L 9 21 L 9 13 Z" fill="none" stroke="#5fa04e" stroke-width="1.2"/>
+        <text x="32" y="21" class="tech-pill-text">Node.js</text>
+      </g>
+
+      <!-- Express.js -->
+      <g transform="translate(0, 44)">
+        <rect width="112" height="34" rx="6" fill="url(#pillGrad)" stroke="#30363d" stroke-width="0.8"/>
+        <text x="12" y="21" font-family="'JetBrains Mono', monospace" font-size="12px" font-weight="700" fill="#ffffff">ex</text>
+        <text x="34" y="21" class="tech-pill-text">Express</text>
+      </g>
+
+      <!-- Docker -->
+      <g transform="translate(122, 44)">
+        <rect width="112" height="34" rx="6" fill="url(#pillGrad)" stroke="#30363d" stroke-width="0.8"/>
+        <!-- Whale icon -->
+        <path d="M 10 18 C 10 14 14 14 16 14 C 18 14 20 12 24 14 C 24 18 18 20 12 20 Z" fill="none" stroke="#2496ed" stroke-width="1.2"/>
+        <rect x="13" y="10" width="3" height="3" fill="#2496ed"/>
+        <rect x="17" y="10" width="3" height="3" fill="#2496ed"/>
+        <text x="32" y="21" class="tech-pill-text">Docker</text>
+      </g>
+
+      <!-- Full-stack MERN pill -->
+      <g transform="translate(0, 88)">
+        <rect width="234" height="42" rx="6" fill="#161b22" stroke="#30363d" stroke-width="0.8"/>
+        <text x="14" y="20" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="12px" font-weight="700" fill="#c9d1d9">Full-Stack Foundations</text>
+        <text x="14" y="34" class="tech-pill-sub">Web Architecture &amp; REST APIs</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- CARD 4: DATABASES & CLOUD EXPLORATION (270w) -->
+  <g transform="translate(295, 230)" class="bento-card">
+    <rect width="270" height="200" rx="14" fill="url(#cardBg)" stroke="#30363d" stroke-width="1.2" filter="url(#cardGlow)"/>
+    
+    <g transform="translate(18, 24)">
+      <!-- Cylinder Icon -->
+      <ellipse cx="5" cy="3" rx="5" ry="2" fill="none" stroke="#3fb950" stroke-width="1.2"/>
+      <path d="M 0 3 L 0 11 C 0 13 10 13 10 11 L 10 3" fill="none" stroke="#3fb950" stroke-width="1.2"/>
+      <text x="20" y="9" class="card-title">DATABASES &amp; CLOUD</text>
+    </g>
+    <line x1="18" y1="38" x2="252" y2="38" stroke="#30363d" stroke-width="0.8" stroke-dasharray="3 3"/>
+
+    <g transform="translate(18, 48)">
+      <!-- MongoDB -->
+      <g transform="translate(0, 0)">
+        <rect width="112" height="34" rx="6" fill="url(#pillGrad)" stroke="#30363d" stroke-width="0.8"/>
+        <!-- Leaf mark -->
+        <path d="M 16 8 C 12 12 12 18 16 24 C 20 18 20 12 16 8 Z" fill="none" stroke="#47a248" stroke-width="1.2"/>
+        <text x="30" y="21" class="tech-pill-text">MongoDB</text>
+      </g>
+
+      <!-- Firebase -->
+      <g transform="translate(122, 0)">
+        <rect width="112" height="34" rx="6" fill="url(#pillGrad)" stroke="#30363d" stroke-width="0.8"/>
+        <!-- Flame icon -->
+        <path d="M 16 8 L 19 16 L 14 18 L 16 8 Z M 19 16 L 23 23 L 13 23 Z" fill="none" stroke="#ffca28" stroke-width="1.2"/>
+        <text x="32" y="21" class="tech-pill-text">Firebase</text>
+      </g>
+
+      <!-- SQL / Relational -->
+      <g transform="translate(0, 44)">
+        <rect width="234" height="34" rx="6" fill="url(#pillGrad)" stroke="#30363d" stroke-width="0.8"/>
+        <ellipse cx="16" cy="12" rx="7" ry="2.5" fill="none" stroke="#58a6ff" stroke-width="1"/>
+        <path d="M 9 12 L 9 20 C 9 22.5 23 22.5 23 20 L 23 12" fill="none" stroke="#58a6ff" stroke-width="1"/>
+        <text x="34" y="21" class="tech-pill-text">Relational SQL Databases</text>
+      </g>
+
+      <!-- Explicit Azure [LEARNING] Cardlet -->
+      <g transform="translate(0, 88)">
+        <rect width="234" height="42" rx="6" fill="#161b22" stroke="#0089d6" stroke-width="1.2" stroke-dasharray="4 2"/>
+        
+        <!-- Azure Cloud Icon -->
+        <path d="M 12 28 L 22 13 L 26 20 L 32 28 Z M 20 28 L 25 21 L 28 28 Z" fill="#0089d6"/>
+        
+        <text x="38" y="21" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="12.5px" font-weight="700" fill="#ffffff">Microsoft Azure</text>
+        
+        <!-- LEARNING BADGE -->
+        <rect x="156" y="10" width="70" height="18" rx="3" fill="#2d2200" stroke="#e3b341" stroke-width="0.8"/>
+        <text x="191" y="22.5" class="learning-tag" text-anchor="middle">LEARNING</text>
+
+        <text x="38" y="35" class="tech-pill-sub">Cloud Exploration &amp; AI Deploy</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- CARD 5: TOOLS & WORKFLOW (270w) -->
+  <g transform="translate(580, 230)" class="bento-card">
+    <rect width="270" height="200" rx="14" fill="url(#cardBg)" stroke="#30363d" stroke-width="1.2" filter="url(#cardGlow)"/>
+    
+    <g transform="translate(18, 24)">
+      <!-- Wrench/Tool Icon -->
+      <path d="M 0 3 A 4 4 0 0 1 6 0 L 8 2 L 6 4 L 8 6 L 6 8 L 4 6 L 2 8 Z M 6 8 L 12 14" fill="none" stroke="#d2a8ff" stroke-width="1.2"/>
+      <text x="20" y="9" class="card-title">TOOLS &amp; WORKFLOW</text>
+    </g>
+    <line x1="18" y1="38" x2="252" y2="38" stroke="#30363d" stroke-width="0.8" stroke-dasharray="3 3"/>
+
+    <g transform="translate(18, 48)">
+      <!-- Git -->
+      <g transform="translate(0, 0)">
+        <rect width="112" height="34" rx="6" fill="url(#pillGrad)" stroke="#30363d" stroke-width="0.8"/>
+        <!-- Git branch -->
+        <circle cx="12" cy="12" r="2" fill="#f05032"/>
+        <circle cx="20" cy="12" r="2" fill="#f05032"/>
+        <circle cx="12" cy="22" r="2" fill="#f05032"/>
+        <path d="M 12 14 L 12 20 M 12 18 C 16 18 16 14 20 14" fill="none" stroke="#f05032" stroke-width="1.2"/>
+        <text x="30" y="21" class="tech-pill-text">Git</text>
+      </g>
+
+      <!-- GitHub -->
+      <g transform="translate(122, 0)">
+        <rect width="112" height="34" rx="6" fill="url(#pillGrad)" stroke="#30363d" stroke-width="0.8"/>
+        <!-- GitHub mark -->
+        <circle cx="16" cy="17" r="7" fill="none" stroke="#ffffff" stroke-width="1.2"/>
+        <path d="M 11 20 C 13 18 19 18 21 20" fill="none" stroke="#ffffff" stroke-width="1"/>
+        <text x="32" y="21" class="tech-pill-text">GitHub</text>
+      </g>
+
+      <!-- Cursor -->
+      <g transform="translate(0, 44)">
+        <rect width="112" height="34" rx="6" fill="url(#pillGrad)" stroke="#30363d" stroke-width="0.8"/>
+        <!-- Cursor pointer -->
+        <path d="M 12 10 L 12 24 L 16 20 L 20 23 L 22 21 L 18 18 L 22 18 Z" fill="none" stroke="#58a6ff" stroke-width="1.1"/>
+        <text x="32" y="21" class="tech-pill-text">Cursor</text>
+      </g>
+
+      <!-- Postman -->
+      <g transform="translate(122, 44)">
+        <rect width="112" height="34" rx="6" fill="url(#pillGrad)" stroke="#30363d" stroke-width="0.8"/>
+        <!-- Postman astronaut / orange mark -->
+        <circle cx="16" cy="17" r="6" fill="none" stroke="#ff6c37" stroke-width="1.2"/>
+        <text x="32" y="21" class="tech-pill-text">Postman</text>
+      </g>
+
+      <!-- Figma -->
+      <g transform="translate(0, 88)">
+        <rect width="112" height="34" rx="6" fill="url(#pillGrad)" stroke="#30363d" stroke-width="0.8"/>
+        <circle cx="16" cy="17" r="5" fill="none" stroke="#a259ff" stroke-width="1.2"/>
+        <text x="30" y="21" class="tech-pill-text">Figma</text>
+      </g>
+
+      <!-- LaTeX -->
+      <g transform="translate(122, 88)">
+        <rect width="112" height="34" rx="6" fill="url(#pillGrad)" stroke="#30363d" stroke-width="0.8"/>
+        <text x="10" y="22" font-family="'Times New Roman', serif" font-weight="bold" font-size="12px" fill="#388bfd">L<tspan font-size="9px" dy="-2">A</tspan><tspan font-size="12px" dy="2">T</tspan><tspan font-size="9px" dy="2">E</tspan><tspan font-size="12px" dy="-2">X</tspan></text>
+        <text x="44" y="21" class="tech-pill-text">LaTeX</text>
+      </g>
+    </g>
+  </g>
+</svg>

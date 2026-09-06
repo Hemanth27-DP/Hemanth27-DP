@@ -1,0 +1,113 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 190" width="860" height="190">
+  <defs>
+    <linearGradient id="p1Grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1c1917"/>
+      <stop offset="100%" stop-color="#0d1117"/>
+    </linearGradient>
+    <linearGradient id="p2Grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0e1726"/>
+      <stop offset="100%" stop-color="#0d1117"/>
+    </linearGradient>
+    <filter id="pGlow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="1" stdDeviation="3" flood-color="#30363d" flood-opacity="0.4"/>
+    </filter>
+  </defs>
+
+  <style>
+    .proj-title {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      font-size: 15px;
+      font-weight: 700;
+      fill: #ffffff;
+    }
+    .proj-meta {
+      font-family: "JetBrains Mono", Consolas, monospace;
+      font-size: 10px;
+      font-weight: 600;
+      letter-spacing: 1px;
+    }
+    .proj-desc {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      font-size: 12px;
+      fill: #8b949e;
+      line-height: 1.5;
+    }
+    .proj-tag {
+      font-family: "JetBrains Mono", Consolas, monospace;
+      font-size: 9.5px;
+      fill: #c9d1d9;
+    }
+    .proj-card {
+      transition: all 0.3s ease;
+    }
+    .proj-card:hover {
+      filter: brightness(1.08);
+    }
+  </style>
+
+  <!-- ================= PROJECT 1: Secure 3-Tier Web App (AWS) ================= -->
+  <g transform="translate(10, 5)" class="proj-card">
+    <rect width="415" height="178" rx="12" fill="url(#p1Grad)" stroke="#FF9900" stroke-width="1.3" stroke-opacity="0.75" filter="url(#pGlow)"/>
+    
+    <!-- Platform Badge -->
+    <g transform="translate(20, 24)">
+      <rect width="68" height="20" rx="4" fill="#21262d" stroke="#FF9900" stroke-width="0.8"/>
+      <text x="34" y="14" class="proj-meta" fill="#FF9900" text-anchor="middle">AWS</text>
+
+      <text x="80" y="14" class="proj-meta" fill="#8b949e">PORTFOLIO PROJECT</text>
+    </g>
+
+    <!-- Title -->
+    <text x="20" y="68" class="proj-title">Secure 3-Tier Web App</text>
+
+    <!-- Positioning & Concept -->
+    <g transform="translate(20, 88)">
+      <text x="0" y="0" class="proj-desc">Security-focused cloud project demonstrating a deliberately</text>
+      <text x="0" y="16" class="proj-desc">misconfigured cloud architecture with detection &amp; hardening.</text>
+    </g>
+
+    <!-- Methodology Tag -->
+    <g transform="translate(20, 126)">
+      <rect width="210" height="22" rx="4" fill="#161b22" stroke="#30363d" stroke-width="0.8"/>
+      <text x="10" y="15" class="proj-tag" fill="#FFAE33">Misconfigure &gt; Detect &gt; Harden</text>
+    </g>
+
+    <!-- Tech Pills -->
+    <g transform="translate(20, 158)">
+      <text x="0" y="0" class="proj-tag" fill="#8b949e">IAM <tspan fill="#30363d">•</tspan> VPC <tspan fill="#30363d">•</tspan> Security Groups <tspan fill="#30363d">•</tspan> CloudTrail <tspan fill="#30363d">•</tspan> CloudWatch</text>
+    </g>
+  </g>
+
+  <!-- ================= PROJECT 2: AI Travel Planner & Booking Agent (Azure) ================= -->
+  <g transform="translate(435, 5)" class="proj-card">
+    <rect width="415" height="178" rx="12" fill="url(#p2Grad)" stroke="#0089d6" stroke-width="1.3" stroke-opacity="0.75" filter="url(#pGlow)"/>
+    
+    <!-- Platform Badge -->
+    <g transform="translate(20, 24)">
+      <rect width="78" height="20" rx="4" fill="#161b22" stroke="#0089d6" stroke-width="0.8"/>
+      <text x="39" y="14" class="proj-meta" fill="#58a6ff" text-anchor="middle">AZURE</text>
+
+      <text x="90" y="14" class="proj-meta" fill="#8b949e">FINAL-YEAR PROJECT</text>
+    </g>
+
+    <!-- Title -->
+    <text x="20" y="68" class="proj-title">AI Travel Planner &amp; Booking Agent</text>
+
+    <!-- Positioning & Concept -->
+    <g transform="translate(20, 88)">
+      <text x="0" y="0" class="proj-desc">AI-powered travel assistant automating contextual itinerary</text>
+      <text x="0" y="16" class="proj-desc">planning and booking workflows deployed on Azure cloud.</text>
+    </g>
+
+    <!-- Methodology Tag -->
+    <g transform="translate(20, 126)">
+      <rect width="210" height="22" rx="4" fill="#161b22" stroke="#30363d" stroke-width="0.8"/>
+      <text x="10" y="15" class="proj-tag" fill="#58a6ff">AI Agent &amp; Workflow Automation</text>
+    </g>
+
+    <!-- Tech Pills -->
+    <g transform="translate(20, 158)">
+      <text x="0" y="0" class="proj-tag" fill="#8b949e">Python AI <tspan fill="#30363d">•</tspan> LLM Systems <tspan fill="#30363d">•</tspan> Azure App Service</text>
+    </g>
+  </g>
+</svg>

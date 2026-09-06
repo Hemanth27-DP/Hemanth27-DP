@@ -1,0 +1,18 @@
+# Raw intermediate snake artifact (enhanced version is committed)
+svgs/github-snake-dark.svg
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+.venv/
+
+# Environment / IDE
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
