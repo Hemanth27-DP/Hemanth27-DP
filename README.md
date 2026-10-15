@@ -7,7 +7,7 @@
   <br>
 
   <!-- GITHUB CONTRIBUTIONS SNAKE -->
-  <img src="./svgs/github-snake-dark-enhanced.svg?v=1792062901" width="860" alt="GitHub Contributions Snake" />
+  <img src="./svgs/github-snake-dark-enhanced.svg?v=1792082736" width="860" alt="GitHub Contributions Snake" />
 
   <br>
   <br>
